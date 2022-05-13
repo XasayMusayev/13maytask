@@ -1,0 +1,30 @@
+namespace ConsoleApp9
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int[] array = { 52, 53, 63 };
+            int imtahanlar = CalcAvg(array);
+            if (imtahanlar>60)
+                Console.WriteLine("mezunsuz");
+            else { Console.WriteLine("kesildin"); }
+
+        }
+            static int CalcAvg(int[] array)
+            {
+            int sum = 0;
+            
+            foreach (int element in array)
+            {
+                sum += element;
+            }
+
+                return sum / array.Length;
+            
+            }
+
+
+    }
+}

@@ -1,0 +1,29 @@
+namespace ConsoleApp9
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            IsPrime(49);
+            IsPrime(4);
+            IsPrime(2);
+        }
+        
+        static void IsPrime(int a) 
+        { 
+            bool flag = true;
+            for (int i = 2; i < a; i++)
+            {
+                if (a % i == 0)
+                {
+                    flag = false;
+                }
+            }
+
+                Console.WriteLine(flag);
+            
+        }
+
+
+    }
+}
